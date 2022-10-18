@@ -1,0 +1,29 @@
+Tutte le mattine il professore chiama uno studente a caso per un’esercitazione guidata. Una volta chiamati tutti gli studenti ricomincia da capo.
+
+INIZIO
+
+prendere la lista degli studenti
+SE esiste la lista dei chiamati
+	- prendere la lista dei chiamati
+	- confrontare lista degli studenti con quella dei chiamati
+	SE tutti gli studenti sono stati chiamati
+		- distruggere la lista dei chiamati
+		- prendere foglio bianco e scriverci sopra "Lista dei chiamati"
+	FINE SE
+ALTRIMENTI
+	- prendere foglio bianco e scriverci sopra "Lista dei chiamati"
+FINE SE
+
+selezionare a caso uno studente dalla lista degli studenti
+FINCHè (lo studente selezionato è assente OPPURE è presente nella lista dei chiamati)
+	- selezionare un'altro studente
+FINE FINCHè
+
+- aggiungere lo studente nella lista dei chiamati
+- chiamare lo studente
+
+FINE
+
+
+
+TODO: gestire tutti gli studenti assenti
